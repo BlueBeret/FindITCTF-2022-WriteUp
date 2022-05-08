@@ -5,3 +5,10 @@ n = 634700503487766158115038509619422295969417670380913058190145906857689
 # n terlalu kecil, bisa difaktorin
 p = 357239540285693222206601921599 
 q = 1776680439629332739835832171799514119911
+
+from Crypto.Util.number import *
+
+d = inverse(e, (p-1)*(q-1))
+m = pow(c, d, n)
+print(long_to_bytes(m))
+b'FindITCTF{3a5y_12iGht?}'
