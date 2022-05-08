@@ -1,0 +1,2 @@
+SHA1 (MikroTik_RouterOS_CHR7-disk001.vmdk) = 5a042a2e5ee97b42033637d1aa7783f8511921e9
+SHA1 (MikroTik_RouterOS_CHR7.ovf) = 276af5cb59f68342e562b6f66c3cc6d64e752f5a
