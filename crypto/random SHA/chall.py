@@ -1,6 +1,5 @@
 import random,string
 import hashlib
-
 flag = "FindITCTF{REDACTED}"
 enc_flag = ""
 random.seed("FINDIT")
@@ -15,11 +14,9 @@ for c in flag:
 	  enc_flag += chr((ord(c)-ord('0')+random.randrange(0,10))%10 + ord('0'))
   else:
 	  enc_flag += c
-
 for c in enc_flag:
     now += c
     ct.append(
             int(hashlib.sha512(now.encode()).hexdigest(), 16)>>256
         )
-
 print(f"ct = {ct}")

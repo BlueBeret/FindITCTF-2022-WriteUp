@@ -1,5 +1,5 @@
 flag = 'FindITCTF{REDACTED}'
-flag = '1234'*7
+flag = '1234' * 7
 
 def split_len(seq, length):
    return [seq[i:i + length] for i in range(0, len(seq), length)]

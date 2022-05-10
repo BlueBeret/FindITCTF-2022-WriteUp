@@ -9,6 +9,5 @@ q = 1776680439629332739835832171799514119911
 from Crypto.Util.number import *
 
 d = inverse(e, (p-1)*(q-1))
-m = pow(c, d, n)
+m = pow(c, d, p*q)
 print(long_to_bytes(m))
-b'FindITCTF{3a5y_12iGht?}'
